@@ -222,11 +222,40 @@ a h1 {
 
 /* END OF HOME BOXES */
 
+/* ARTICLES PAGE */
+
+.articleJumbotron {
+	z-index: 1;
+}
+
+.article-content {
+	background-color: #9f7d63ff;
+	width: 75%;
+	position: relative;
+	height: 1000px;
+	margin: 0 auto;
+	z-index: 2;
+	max-width: 1100px;
+}
+@media (min-width: 1024px) {
+	.article-content {
+		top: -200px;
+	}
+}
+
+/* END OF ARTICLES PAGE */
+
+/* FRANNY LOU'S ARTICLE PAGE */
+
+
+/* END OF FRANNY LOU'S ARTICLE PAGE */
+
 /* FOOTER */
 #footer {
-	height: 100px;
-	margin-top: auto;
-	margin-bottom: auto;
+	clear: both;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 5px;
 	background-color: #9f7d63ff;
 }
 /* END OF FOOTER
