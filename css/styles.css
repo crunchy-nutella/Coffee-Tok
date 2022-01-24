@@ -1,6 +1,7 @@
  /* header */
 /* white
-9f7d63ff
+#9f7d63ff
+#decdb9
  */
 /*DROPDOWN ICON IS INVISIBLE*/
 
@@ -12,10 +13,6 @@ body {
 
 /* HEADER */
 
-/*.current-page:link {
-	border: 3px solid black;
-	color: black;
-}*/
 a h1 {
 	float: left;
 	margin: 5px 15px;
@@ -39,7 +36,7 @@ a h1 {
 #header-nav.navbar.navbar-custom {
 	background-color: #9f7d63ff;
 }
-a.nav-link, a.nav-link:visited, a.nav-link:active  {
+a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .open .dropdown-toggle {
 	color: white;
 	font-size: 1.5em;
 }
@@ -71,6 +68,10 @@ a.nav-link, a.nav-link:visited, a.nav-link:active  {
 }
 .navbar-toggler.custom-toggler {
 	border: 2px solid white;
+}
+.current-page {
+	border: 1px white solid;
+	border-radius: 10px;
 }
 /* END OF HEADER */
 
@@ -220,25 +221,80 @@ a.nav-link, a.nav-link:visited, a.nav-link:active  {
 .articleJumbotron {
 	z-index: 1;
 }
-
 .article-content {
 	background-color: #9f7d63ff;
 	width: 75%;
 	position: relative;
-	height: 1000px;
+	height: auto;
 	margin: 0 auto;
 	z-index: 2;
 	max-width: 1100px;
+	padding-bottom: 10px;
 }
 .article-header {
 	color: white;
 	text-align: center;
+	margin-bottom: 40px;
 }
 hr.divider {
 	width: 75%;
 	height: 2px;
 	color: white;
 	margin: 25px auto;
+}
+.row.coffee-convo {
+	padding: 20px 10px;
+	color: #decdb9;
+	margin: 30px;
+	border: 2px dashed #decdb9;
+}
+h3.coffee-question {
+	font-size: 2em;
+	padding: 10px auto;
+	vertical-align: middle;
+}
+p.coffee-response {
+	margin-bottom: 0;
+	vertical-align: center;
+}
+.theArticle p {
+	margin: 5px 30px;
+	text-indent: 25px;
+	font-weight: 700;
+}
+#contactThem {
+	padding: 10px;
+	color: #decdb9;
+	margin: 30px;
+	border: 2px dashed #decdb9;
+}
+#contactThemHeader {
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 10px;
+}
+#contacts {
+	margin-top: 70px;
+}
+#contacts a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 20px;
+}
+#contacts div {
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+}
+#contacts div {
+	border: 1px #decdb9 solid;
+}
+#contacts div:hover{
+	box-shadow: 2px 2px #decdb9;
+}
+#map {
+	overflow: hidden;
+	padding-right: 20px;
 }
 @media (min-width: 1400px) {
 	.article-content {
@@ -271,7 +327,7 @@ hr.divider {
 	}
 }
 @media (min-width: 767px) and (max-width: 991px) {
-	.container.FrannyLous {
+	.container.FrannyLous, .container.LuckyGoat {
 		max-width: 100%;
 		margin: 0;
 		width: 100%;
@@ -290,7 +346,7 @@ hr.divider {
 	}
 }
 @media (max-width: 766px) {
-	.FrannyLous .articleJumbotron {
+	.FrannyLous .articleJumbotron, .LuckyGoat .articleJumbotron {
 		-webkit-background-size: cover;
 	}
 	.article-content {
@@ -303,24 +359,129 @@ hr.divider {
 	h5 .article-subtitle {
 		font-size: 1.25em;
 	}
-	.container.FrannyLous {
+	.container.FrannyLous, .container.LuckyGoat {
 		max-width: 100%;
 		padding: 0;
 	}
+	#contacts {
+		margin-top: 0px;
+	}
+}
 
 /* END OF ARTICLES PAGE */
 
-/* FRANNY LOU'S ARTICLE PAGE */
+/*ABOUT PAGE */
 
+#aboutHeader {
+	width: 300px;
+	text-align: center;
+	margin: 40px auto;
+	font-size: 40px;
+	border: 3px #3d220f solid;
+	padding: 10px;
+	border-radius: 5px;
+}
+#aboutMe {
+	border: 2px #3d220f solid;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
+	height: 400px;
+	position: relative;
+}
+#aboutMeHeader{
+	font-size: 1.5em;
+	padding-top: 30px;
+	position: relative;
+	left: 290px;
+}
+#aboutMeImage {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	float: left;
+}
+#aboutMeBody {
+	margin: auto 0;
+	float: left;
+}
+#aboutMeText {
+	padding: 20px 20px 40px 290px;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	#aboutMe {
+		height: 475px;
+	}
+	#aboutMeImage {
+		left: 20px;
+		top: 86px;
+	}
+}
+@media (max-width: 767px) {
+	#aboutMeImage {
+		top: 80px;
+		width: 90%;
+	}
+	#aboutMeText {
+		padding: 138% 20px 20px 20px;
+	}
+	#aboutMeHeader {
+		left: 40%;
+	}
+	#aboutMe {
+		height: auto;
+	}
+}
+@media (max-width: 530px) {
+	#aboutMe {
+		height: auto;
+	}
+}
+@media (min-width: 565px) and (max-width: 580px) {
+	#aboutMe {
+		height: auto;
+	}
+}
+.row.thanks {
+	max-width: ;
+	padding-top: 40px;
+}
+.thanks-column {
+	border: #3d220f solid 2px;
+	border-radius: 5px;
+}
+.thanks-header {
+	font-size: 1.25em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
-/* END OF FRANNY LOU'S ARTICLE PAGE */
+/*END OF ABOUT PAGE */
 
 /* FOOTER */
 #footer {
-	clear: both;
+	position: relative;
 	height: 50px;
 	margin-top: 20px;
 	margin-bottom: 5px;
 	background-color: #9f7d63ff;
 }
+
+@media (min-width: 1200px){
+	#footer {
+		top: -150px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#footer {
+		top: -100px;
+	}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+	#footer {
+		top: -100px;
+	}
+}
+
 /* END OF FOOTER
