@@ -43,6 +43,9 @@ a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .ope
 .nav-item > .nav-link:hover {
 	color: #decdb9;
 }
+.dropdown-item:active {
+	background-color: grey;
+}
 .dropdown-menu {
 	padding: 0;
 }
@@ -250,7 +253,7 @@ hr.divider {
 }
 h3.coffee-question {
 	font-size: 2em;
-	padding: 10px auto;
+	padding: 10px;
 	vertical-align: middle;
 }
 p.coffee-response {
@@ -331,7 +334,7 @@ p.coffee-response {
 		max-width: 100%;
 		margin: 0;
 		width: 100%;
-		padding: 0 auto;
+		padding: 0;
 	}
 	.article-content {
 		top: -100px;
@@ -398,7 +401,7 @@ p.coffee-response {
 }
 #aboutMeImage {
 	position: absolute;
-	bottom: 20px;
+	bottom: 54px;
 	left: 20px;
 	float: left;
 }
@@ -424,7 +427,7 @@ p.coffee-response {
 		width: 90%;
 	}
 	#aboutMeText {
-		padding: 138% 20px 20px 20px;
+		padding: 115% 20px 20px 20px;
 	}
 	#aboutMeHeader {
 		left: 40%;
@@ -444,7 +447,7 @@ p.coffee-response {
 	}
 }
 .row.thanks {
-	max-width: ;
+	max-width: 900px;
 	padding-top: 40px;
 }
 .thanks-column {
@@ -456,10 +459,23 @@ p.coffee-response {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+.sources-list {
+	text-decoration: underline;
+}
+.sources-list li {
+	text-decoration: none;
+}
 
 /*END OF ABOUT PAGE */
 
 /* FOOTER */
+#footer2 {
+	position: relative;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	background-color: #9f7d63ff;	
+}
 #footer {
 	position: relative;
 	height: 50px;
