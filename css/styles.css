@@ -36,7 +36,7 @@ a h1 {
 #header-nav.navbar.navbar-custom {
 	background-color: #9f7d63ff;
 }
-a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .open .dropdown-toggle {
+a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .dropdown-toggle:focus, .open .dropdown-toggle {
 	color: white;
 	font-size: 1.5em;
 }
@@ -87,12 +87,16 @@ a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .ope
 	background-color: #3d220f;
 
 }
-.carousel-caption h5 {
+.carousel-caption h5 a {
 	opacity: 1;
 	color: white;
 	font-size: 50px;
 	vertical-align: middle;
 	margin: 0;
+	text-decoration: none;
+}
+.carousel-caption h5 a:hover {
+	font-weight: 700;
 }
 .carousel-item .carousel-caption {
 	width: 796px;
@@ -459,11 +463,12 @@ p.coffee-response {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-.sources-list {
-	text-decoration: underline;
-}
-.sources-list li {
+#sources-body a {
+	color: #3d220f;
 	text-decoration: none;
+}
+#sources-body a:hover {
+	text-decoration: underline;
 }
 
 /*END OF ABOUT PAGE */
