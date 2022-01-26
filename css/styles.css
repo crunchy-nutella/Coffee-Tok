@@ -84,6 +84,12 @@ a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .dro
 .navbar-toggler {
 	border: 2px #decdb9 solid;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 /* END OF HEADER */
 
 
@@ -113,23 +119,26 @@ a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .dro
 @media (min-width: 768px) and (max-width: 796px) {
 	#carouselCaptions div:nth-child(2) h5{
 		font-size: 45px;
-		padding-bottom: 15px;
 	}
 }
 @media (max-width: 767px) {
 	#carouselCaptions div:nth-child(2) h5{
-		font-size: 30px;
 		padding-bottom: 15px;
-	}
-}
-@media (min-width: 370px) and (max-width: 767px) {
-	.carousel-caption h5 a {
-		font-size: 25px;
 	}
 	.carousel-item .carousel-caption {
 		bottom: 0;
 		width: 100%;
 		left: 0;
+	}
+}
+@media (min-width: 600px) and (max-width: 767px) {
+	.carousel-caption h5 a {
+		font-size: 40px;
+	}
+}
+@media (max-width: 599px){
+	.carousel-caption h5 a {
+		font-size: 25px;
 	}
 }
 @media (min-width: 1024px){
