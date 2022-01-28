@@ -12,6 +12,9 @@ body {
 
 /* HEADER */
 
+#logo {
+	filter: invert(12%) sepia(47%) saturate(754%) hue-rotate(343deg) brightness(93%) contrast(95%);
+}
 a h1 {
 	float: left;
 	margin: 5px 15px;
@@ -443,7 +446,7 @@ p.coffee-response {
 }
 @media (max-width: 991px) and (min-width: 768px) {
 	#aboutMe {
-		height: 475px;
+		height: auto;
 	}
 	#aboutMeImage {
 		left: 20px;
