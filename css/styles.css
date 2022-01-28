@@ -41,6 +41,7 @@ a h1 {
 a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .dropdown-toggle:focus, .open .dropdown-toggle {
 	color: white;
 	font-size: 1.5em;
+	border: none;
 }
 .nav-item > .nav-link:hover {
 	color: #decdb9;
