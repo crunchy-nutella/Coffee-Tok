@@ -63,7 +63,7 @@ a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .dro
 	color: #311800;
 	font-weight: 500;
 }
-@media (max-width: 506px) {
+@media (max-width: 509px) {
 	.navbar-brand {
 		margin: auto;
 		font-size: .8em;
@@ -93,6 +93,11 @@ a.nav-link, a.nav-link:visited, a.nav-link:active, .dropdown-toggle:active, .dro
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
+}
+@media (max-width: 465px) {
+	.navbar-header {
+		width: 240px;
+	}
 }
 /* END OF HEADER */
 
