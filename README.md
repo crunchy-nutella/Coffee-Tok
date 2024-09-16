@@ -1,4 +1,4 @@
-#COFFEE TALK
+# COFFEE TALK
 
 This project was my entrance to web design. It is written in HTML and CSS, and implements some of the Bootstrap 5.0 framework.
 
